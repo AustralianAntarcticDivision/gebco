@@ -9,6 +9,8 @@ This release includes a version of the grid with under-ice topography/bathymetry
 
 Find out information about [terms of use and attribution here](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#a1).
 
+Documentation on [data preparation is accessible here](https://github.com/AustralianAntarcticDivision/gebco).
+
 ## Access data
 
 ### Stream data

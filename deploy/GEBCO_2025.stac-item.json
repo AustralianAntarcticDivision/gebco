@@ -100,7 +100,7 @@
     }
   ],
   "assets": {
-    "gebco": {
+    "elevation": {
       "href": "https://data.source.coop/ausantarctic/gebco/GEBCO_2025.tif",
       "raster:bands": [
         {
