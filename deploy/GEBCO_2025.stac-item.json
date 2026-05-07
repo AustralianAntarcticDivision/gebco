@@ -1,0 +1,149 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "id": "GEBCO_2025.tif",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "proj:epsg": 4326,
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -180.0,
+            -90.0
+          ],
+          [
+            180.0,
+            -90.0
+          ],
+          [
+            180.0,
+            90.0
+          ],
+          [
+            -180.0,
+            90.0
+          ],
+          [
+            -180.0,
+            -90.0
+          ]
+        ]
+      ]
+    },
+    "proj:bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "proj:shape": [
+      43200,
+      86400
+    ],
+    "proj:transform": [
+      0.004166666666666667,
+      0.0,
+      -180.0,
+      0.0,
+      -0.004166666666666667,
+      90.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "datetime": "2025-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "gebco",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "gebco": {
+      "href": "https://data.source.coop/ausantarctic/gebco/GEBCO_2025.tif",
+      "raster:bands": [
+        {
+          "data_type": "int16",
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "nodata": -32767.0,
+          "unit": "m",
+          "statistics": {
+            "mean": -1899.357509613037,
+            "minimum": -9574,
+            "maximum": 5764,
+            "stddev": 2646.680074857193,
+            "valid_percent": 100.0
+          },
+          "histogram": {
+            "count": 11,
+            "min": -9574.0,
+            "max": 5764.0,
+            "buckets": [
+              98,
+              482,
+              61886,
+              152560,
+              62137,
+              30687,
+              154984,
+              35783,
+              23994,
+              1677
+            ]
+          }
+        }
+      ],
+      "eo:bands": [
+        {
+          "name": "b1",
+          "description": "gray"
+        }
+      ],
+      "roles": []
+    }
+  },
+  "collection": "gebco"
+}
