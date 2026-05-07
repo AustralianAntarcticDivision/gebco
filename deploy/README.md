@@ -47,5 +47,8 @@ data.elevation.odc.explore(vmin=-3000, vmax=3000, cmap="terrain")
 ### Downloading
 
 While the idea of cloud native data formats is to not download, you can
-download this data using this following URL:
-`https://data.source.coop/ausantarctic/gebco/GEBCO_2024.tif`
+download this data using the following URLs:
+
+* 2024: `https://data.source.coop/ausantarctic/gebco/GEBCO_2024.tif`
+* 2025: `https://data.source.coop/ausantarctic/gebco/GEBCO_2025.tif`
+* 2026: `https://data.source.coop/ausantarctic/gebco/GEBCO_2026.tif`
