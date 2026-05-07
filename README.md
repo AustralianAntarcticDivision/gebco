@@ -4,18 +4,14 @@ This repo holds scripts and docs for the Source.Coop GEBCO dataset.
 
 ## Documentation
 
-The folder called `deploy` is the one that we sync to Source Coop.
-
-Synchronise using the AWS CLI. First get credentials from Source.Coop, export them
-and then run the below command to sync.
-
-``` bash
-aws s3 sync ./deploy s3://us-west-2.opendata.source.coop/ausantarctic/gebco/ --dryrun
-```
-
 ## Get and convert data
 
-```
+Examples for getting and converting 2026 data from NetCDF to Cloud Optimised GeoTIFF.
+
+Requires a few software packages and tools, like `gdal`, `unzip`, `wget` and a `uv` managed
+`Python` environment with `rasterio` and `rio-stac` plus the `aws` cli tool.
+
+``` bash
 wget https://dap.ceda.ac.uk/bodc/gebco/global/gebco_2026/ice_surface_elevation/netcdf/GEBCO_2026.zip?download=1 \
  -O GEBCO_2026.zip
 
@@ -44,4 +40,13 @@ rio stac \
     --with-proj \
     --with-raster \
     deploy/GEBCO_2026.tif > deploy/GEBCO_2026.stac-item.json
+```
+
+## Sync to Source.Coop
+
+Synchronise using the AWS CLI. First get credentials from Source.Coop, export them
+and then run the below command to sync.
+
+``` bash
+aws s3 sync ./deploy s3://us-west-2.opendata.source.coop/ausantarctic/gebco/ --dryrun
 ```
